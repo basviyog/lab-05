@@ -8,6 +8,21 @@
     tools:context=".MainActivity"
     android:padding="6dp">
 
+
+
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Click a city to edit, long click to delete"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddCity" />
+
+
     <Button
         android:id="@+id/buttonAddCity"
         android:text="Add City"
@@ -20,8 +35,12 @@
 
     <ListView
         android:id="@+id/listviewCities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAddCity" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
